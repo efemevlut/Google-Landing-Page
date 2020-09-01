@@ -10,54 +10,56 @@
     <header>
         <nav class="left">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Store</a></li>
+                <li><a class="gray" href="#">About</a></li>
+                <li><a class="gray" href="#">Store</a></li>
             </ul> 
         </nav>
 
         <nav class="right">
             <ul>
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><a href="#"><img src="./images/appicon.png" alt="appicon"></a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#gmail">Gmail</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#appicon"><img src="./images/appicon.png" alt="appicon"></a></li>
+                <li id="box"><a class="box1" href="#signin">Sign In</a></li>
             </ul> 
         </nav>
     </header>
     
     <main>
-        <section><img id="googlelogo" src="./images/googlelogo.png" alt="google_logo"></section>
+        <section><img id="googlelogo" src="./images/googlelogo.png" alt="google_logo"></section><br>
         
         <div id="search-box">
             <img id="magnifier" src="./images/magnifying_glass.jpg" alt="magnifier" width="30px">
-            <form action="result.html" method="GET" name="google_search">
-                <input type="text" name="search">    
+            <form id="form1" action="result.html" method="GET" name="google_search">
+                <input id="input1" type="text" name="gsearch">    
             </form>
             <a href="#mic"><img id="mic" src="./images/google_microphone.png" alt="microfon" width="15pxpx"></a>
         </div>
-
-        <div id="buton">
-            <form action="result.html" method="GET" name="submit">
+        <br><br>
+        <div id="button">
+            <form  id="form2" action="result.html" method="GET" name="submit">
                 <input type="submit" id="first_but" value="Google Search">
                 <input type="submit" id="second_but" value="I'm Feeling Lucky"><br>
-                <p>Other Languages you can use Google: <a href="#English">English</a></p>
+                <p id="p1">Other Languages you can use Google: <a href="#English">English</a></p>
 
             </form>
         </div>
     </main>
 
     <footer>
-        <p>Turkey</p><hr>
+        <p id="p2">Turkey</p><hr>
         <ul id="left">
             <li><a href="#advertising">Advertising</a></li>
             <li><a href="#business">Business</a></li>
             <li><a href="#howsearch">How Search Works</a></li>    
         </ul>
-        <ul id="right">
-            <li><a href="#privacy">Privacy</a></li>
-            <li><a href="#terms">Terms</a></li>
-            <li><a href="#settings">Settings</a></li>    
-        </ul>
+        <nav class="right">
+            <ul>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#terms">Terms</a></li>
+                <li><a href="#settings">Settings</a></li>    
+            </ul>
+        </nav>  
 
         
     </footer>
